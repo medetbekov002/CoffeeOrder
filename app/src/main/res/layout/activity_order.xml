@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/grown"
         app:cornerRadius="32dp"
-        android:text="Submit Order"
+        android:text="ЗАКАЗАТЬ"
         android:textColor="@android:color/white"
         android:textAllCaps="false"
         android:textStyle="bold"

@@ -9,26 +9,23 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="20dp" />
+
     <EditText
         android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your name"
-        android:padding="12dp"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textColorHint="@android:color/darker_gray"
-        android:importantForAccessibility="yes"
-        android:contentDescription="Enter your name"
-        android:autofillHints="name"
-        android:imeOptions="actionDone" />
-<!--        android:background="@drawable/edit_text_background"-->
-<!--        android:importantForAccessibility="yes"-->
-<!--        android:contentDescription="Enter your name"-->
-<!--        android:autofillHints="name"-->
-<!--        android:imeOptions="actionDone" />-->
-
+        android:hint="Enter your name" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -76,10 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:text="Order price"
+            android:text="Стоимость заказа"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold">
 
         </TextView>
@@ -119,10 +116,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="160dp"
             android:layout_toRightOf="@+id/priceTitleTextView"
-            android:text="Quantity"
+            android:text="Количество"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="12sp"
             android:textStyle="bold">
 
         </TextView>
@@ -187,7 +184,7 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/grown"
         android:onClick="addToCard"
-        android:text="Add to Card"
+        android:text="ДОБАВИТЬ НА ЗАКАЗ"
         app:cornerRadius="32dp"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
