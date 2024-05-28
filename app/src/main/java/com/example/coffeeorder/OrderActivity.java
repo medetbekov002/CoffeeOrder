@@ -8,8 +8,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.coffeeorder.R;
-
 public class OrderActivity extends AppCompatActivity {
 
     @Override
@@ -26,12 +24,14 @@ public class OrderActivity extends AppCompatActivity {
         double price = receivedIntent.getDoubleExtra("price", 0);
         double orderPrice = receivedIntent.getDoubleExtra("orderPrice", 0);
 
-        String text = "Name: " + userName + "\n" + "Goods Name: " + goodsName + "\n" + "Quantity: " + quantity + "\n" + "Price: " + price + "$" + "\n" +
-                "Order Price: " + orderPrice + "$";
+        String text = "Name: " + userName + "\n"
+                + "Goods Name: " + goodsName + "\n"
+                + "Quantity: " + quantity + "\n"
+                + "Price: $" + price + "\n"
+                + "Order Price: $" + orderPrice;
 
         TextView textView = findViewById(R.id.orderTextView);
         textView.setText(text);
-
     }
 
     public void orderSubmit(View view) {
