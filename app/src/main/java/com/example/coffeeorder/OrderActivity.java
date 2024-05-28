@@ -8,6 +8,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.coffeeorder.R;
+
 public class OrderActivity extends AppCompatActivity {
 
     @Override
