@@ -24,11 +24,7 @@ public class OrderActivity extends AppCompatActivity {
         double price = receivedIntent.getDoubleExtra("price", 0);
         double orderPrice = receivedIntent.getDoubleExtra("orderPrice", 0);
 
-        String text = "Имя: " + userName + "\n"
-                + "Название товара: " + goodsName + "\n"
-                + "Количество: " + quantity + "\n"
-                + "Цена: $" + price + "\n"
-                + "Стоимость заказа: $" + orderPrice;
+        String text = "Имя: " + userName + "\n" + "Название товара: " + goodsName + "\n" + "Количество: " + quantity + "\n" + "Цена: $" + price + "\n" + "Стоимость заказа: $" + orderPrice;
 
         TextView textView = findViewById(R.id.orderTextView);
         textView.setText(text);

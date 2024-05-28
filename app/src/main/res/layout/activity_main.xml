@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg_background"
+    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        android:textSize="16sp"
-        android:layout_marginEnd="100dp"
         android:layout_marginStart="100dp"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="Добро пожаловать"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/nameEditText"
@@ -62,7 +62,7 @@
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
-        android:src="@drawable/cappuccino"/>
+        android:src="@drawable/cappuccino" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -134,11 +134,11 @@
             android:background="@color/white"
             android:backgroundTint="@color/grown"
             android:onClick="decrease"
-            app:backgroundTint="@color/grown"
             android:text="-"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold">
+            android:textStyle="bold"
+            app:backgroundTint="@color/grown">
 
         </com.google.android.material.button.MaterialButton>
 
@@ -165,14 +165,14 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="320dp"
             android:layout_toRightOf="@id/quantityTextView"
-            android:backgroundTint="@color/grown"
-            app:backgroundTint="@color/grown"
             android:background="@color/white"
+            android:backgroundTint="@color/grown"
             android:onClick="increase"
             android:text="+"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:textStyle="bold">
+            android:textStyle="bold"
+            app:backgroundTint="@color/grown">
 
         </Button>
 
@@ -185,11 +185,11 @@
         android:backgroundTint="@color/grown"
         android:onClick="addToCard"
         android:text="ДОБАВИТЬ НА ЗАКАЗ"
-        app:cornerRadius="32dp"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="bold">
+        android:textStyle="bold"
+        app:cornerRadius="32dp">
 
     </com.google.android.material.button.MaterialButton>
 
