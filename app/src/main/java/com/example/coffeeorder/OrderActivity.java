@@ -15,14 +15,14 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
-        setTitle("Order");
+        setTitle("Заказ");
 
         Intent receivedIntent = getIntent();
-        String userName = receivedIntent.getStringExtra("userName");
-        String goodsName = receivedIntent.getStringExtra("goodsName");
-        int quantity = receivedIntent.getIntExtra("quantity", 0);
-        double price = receivedIntent.getDoubleExtra("price", 0);
-        double orderPrice = receivedIntent.getDoubleExtra("orderPrice", 0);
+        String userName = receivedIntent.getStringExtra("Имя");
+        String goodsName = receivedIntent.getStringExtra("Название товара");
+        int quantity = receivedIntent.getIntExtra("Количество", 0);
+        double price = receivedIntent.getDoubleExtra("Цена", 0);
+        double orderPrice = receivedIntent.getDoubleExtra("Стоимость заказа", 0);
 
         String text = "Имя: " + userName + "\n" + "Название товара: " + goodsName + "\n" + "Количество: " + quantity + "\n" + "Цена: $" + price + "\n" + "Стоимость заказа: $" + orderPrice;
 

@@ -81,10 +81,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private void updateImage() {
         int imageRes;
         switch (goodsName) {
-            case "espresso":
+            case "Эспрессо":
                 imageRes = R.drawable.espresso;
                 break;
-            case "americano":
+            case "Американо":
                 imageRes = R.drawable.americano;
                 break;
             default:
